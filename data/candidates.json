@@ -1,0 +1,162 @@
+[
+  {
+    "candidate_id": 1,
+    "source_file": "basic_arithmetic.ll",
+    "generation_method": "regex_fallback",
+    "original_form": "%add = add i32 %a, 0",
+    "optimized_form": "%add = %a",
+    "features": {
+      "original_instruction_count": 1,
+      "optimized_instruction_count": 0,
+      "instruction_reduction": 1,
+      "operand_count": 2,
+      "constant_count": 1,
+      "variable_count": 1,
+      "opcode": "add",
+      "opcode_id": 1,
+      "instruction_type": "arithmetic",
+      "candidate_size": 20,
+      "complexity": 4
+    }
+  },
+  {
+    "candidate_id": 2,
+    "source_file": "basic_arithmetic.ll",
+    "generation_method": "regex_fallback",
+    "original_form": "%sub = sub i32 %a, 0",
+    "optimized_form": "%sub = %a",
+    "features": {
+      "original_instruction_count": 1,
+      "optimized_instruction_count": 0,
+      "instruction_reduction": 1,
+      "operand_count": 2,
+      "constant_count": 1,
+      "variable_count": 1,
+      "opcode": "sub",
+      "opcode_id": 2,
+      "instruction_type": "arithmetic",
+      "candidate_size": 20,
+      "complexity": 4
+    }
+  },
+  {
+    "candidate_id": 3,
+    "source_file": "basic_arithmetic.ll",
+    "generation_method": "regex_fallback",
+    "original_form": "%mul = mul i32 %a, 1",
+    "optimized_form": "%mul = %a",
+    "features": {
+      "original_instruction_count": 1,
+      "optimized_instruction_count": 0,
+      "instruction_reduction": 1,
+      "operand_count": 2,
+      "constant_count": 1,
+      "variable_count": 1,
+      "opcode": "mul",
+      "opcode_id": 3,
+      "instruction_type": "arithmetic",
+      "candidate_size": 20,
+      "complexity": 4
+    }
+  },
+  {
+    "candidate_id": 4,
+    "source_file": "bitwise.ll",
+    "generation_method": "regex_fallback",
+    "original_form": "%xor = xor i32 %a, 0",
+    "optimized_form": "%xor = %a",
+    "features": {
+      "original_instruction_count": 1,
+      "optimized_instruction_count": 0,
+      "instruction_reduction": 1,
+      "operand_count": 2,
+      "constant_count": 1,
+      "variable_count": 1,
+      "opcode": "xor",
+      "opcode_id": 7,
+      "instruction_type": "bitwise",
+      "candidate_size": 20,
+      "complexity": 4
+    }
+  },
+  {
+    "candidate_id": 5,
+    "source_file": "bitwise.ll",
+    "generation_method": "regex_fallback",
+    "original_form": "%and = and i32 %a, -1",
+    "optimized_form": "%and = %a",
+    "features": {
+      "original_instruction_count": 1,
+      "optimized_instruction_count": 0,
+      "instruction_reduction": 1,
+      "operand_count": 2,
+      "constant_count": 1,
+      "variable_count": 1,
+      "opcode": "and",
+      "opcode_id": 5,
+      "instruction_type": "bitwise",
+      "candidate_size": 21,
+      "complexity": 4
+    }
+  },
+  {
+    "candidate_id": 6,
+    "source_file": "bitwise.ll",
+    "generation_method": "regex_fallback",
+    "original_form": "%or = or i32 %a, 0",
+    "optimized_form": "%or = %a",
+    "features": {
+      "original_instruction_count": 1,
+      "optimized_instruction_count": 0,
+      "instruction_reduction": 1,
+      "operand_count": 2,
+      "constant_count": 1,
+      "variable_count": 1,
+      "opcode": "or",
+      "opcode_id": 6,
+      "instruction_type": "bitwise",
+      "candidate_size": 18,
+      "complexity": 4
+    }
+  },
+  {
+    "candidate_id": 7,
+    "source_file": "constant_ops.ll",
+    "generation_method": "regex_fallback",
+    "original_form": "%add = add i32 5, 10",
+    "optimized_form": "%add = 15",
+    "features": {
+      "original_instruction_count": 1,
+      "optimized_instruction_count": 0,
+      "instruction_reduction": 1,
+      "operand_count": 2,
+      "constant_count": 2,
+      "variable_count": 0,
+      "opcode": "add",
+      "opcode_id": 1,
+      "instruction_type": "arithmetic",
+      "candidate_size": 20,
+      "complexity": 4
+    }
+  },
+  {
+    "candidate_id": 8,
+    "source_file": "constant_ops.ll",
+    "generation_method": "regex_fallback",
+    "original_form": "%sub = sub i32 20, 5",
+    "optimized_form": "%sub = 15",
+    "features": {
+      "original_instruction_count": 1,
+      "optimized_instruction_count": 0,
+      "instruction_reduction": 1,
+      "operand_count": 2,
+      "constant_count": 2,
+      "variable_count": 0,
+      "opcode": "sub",
+      "opcode_id": 2,
+      "instruction_type": "arithmetic",
+      "candidate_size": 20,
+      "complexity": 4
+    }
+  }
+]
